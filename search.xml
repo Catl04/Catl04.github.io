@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Linux学习日志</title>
-    <url>//posts/1220/</url>
-    <content><![CDATA[<h2 id="CentOS服务配置记录"><a href="#CentOS服务配置记录" class="headerlink" title="CentOS服务配置记录"></a><strong>CentOS服务配置记录</strong></h2><h3 id="此博文长期更新"><a href="#此博文长期更新" class="headerlink" title="此博文长期更新"></a><strong>此博文长期更新</strong></h3><p>  CentOS是Linux发行版之一，在以后的课程中老师会讲到，脑子记忆力不行怕跟不上课程进度，这里写个文章记录上课知识点，方便以后查看学习。</p>
-]]></content>
-      <categories>
-        <category>CentOS学习记录</category>
-      </categories>
-      <tags>
-        <tag>Centos</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Windows学习日志</title>
     <url>//posts/1219/</url>
     <content><![CDATA[<h2 id="Windows-Server-2003安装IIS服务并配置WEB站点"><a href="#Windows-Server-2003安装IIS服务并配置WEB站点" class="headerlink" title="Windows Server 2003安装IIS服务并配置WEB站点"></a>Windows Server 2003安装IIS服务并配置WEB站点</h2><h4 id="一、安装IIS服务"><a href="#一、安装IIS服务" class="headerlink" title="一、安装IIS服务"></a><strong>一、安装IIS服务</strong></h4><p>简介：IIS（Internet Information Server，互联网信息服务）是一种Web（网页）服务组件，其中包<br>括Web服务器、FTP服务器、NNTP服务器和SMTP服务器，分别用于网页浏览、文件传输、新闻服务和邮&gt;<br>件发送等方面，它使得在网络（包括互联网和局域网）上发布信息成了一件很容易的事。</p>
