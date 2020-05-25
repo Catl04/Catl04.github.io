@@ -1,126 +1,301 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>Windows学习日志</title>
-      <link href="//posts/1219/"/>
-      <url>//posts/1219/</url>
-      
-        <content type="html"><![CDATA[<h2 id="Windows-Server-2003安装IIS服务并配置WEB站点"><a href="#Windows-Server-2003安装IIS服务并配置WEB站点" class="headerlink" title="Windows Server 2003安装IIS服务并配置WEB站点"></a>Windows Server 2003安装IIS服务并配置WEB站点</h2><h4 id="一、安装IIS服务"><a href="#一、安装IIS服务" class="headerlink" title="一、安装IIS服务"></a><strong>一、安装IIS服务</strong></h4><p>简介：IIS（Internet Information Server，互联网信息服务）是一种Web（网页）服务组件，其中包<br>括Web服务器、FTP服务器、NNTP服务器和SMTP服务器，分别用于网页浏览、文件传输、新闻服务和邮&gt;<br>件发送等方面，它使得在网络（包括互联网和局域网）上发布信息成了一件很容易的事。</p><h4 id="安装："><a href="#安装：" class="headerlink" title="安装："></a><strong>安装：</strong></h4><p>控制面板”，依次选“添加/删除程序”<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/1.jpg" alt><br>添加/删除Windows组件<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/2.jpg" alt><br>在应用程序服务器前打钩、点击详细信息<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/3.jpg" alt><br>将“Internet信息服务（IIS）”前的小钩去掉（如有），重新勾选中后，点击下面的详细信息<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/4.jpg" alt><br>然后添加IIS组件中的Web、FTP、NNTP和SMTP等全部四项服务。<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/5.jpg" alt><br>点击确定、然后点击下一步、就会进行安装<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/6.jpg" alt><br>安装完成后<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/7.jpg" alt><br>点击完成、当IIS添加成功之后，再进入“开始→设置→控制面板→管理工具→Internet服务管理器(I<br>IS管理器)”打开IIS管理器<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/8.jpg" alt><br>可以看到IIS有个默认站<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/9.jpg" alt></p><h4 id="二、配置WEB站点"><a href="#二、配置WEB站点" class="headerlink" title="二、配置WEB站点"></a><strong>二、配置WEB站点</strong></h4><p>在Internet服务管理器(IIS管理器)中新建一个网站<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/12.jpg" alt><br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/13.jpg" alt><br>点击下一步<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/14.jpg" alt><br>点击下一步、IP为192.168.87.129 ，这是主机的IP！使用80端口！<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/15.jpg" alt><br>点击下一步、并将目录路径指向C:/fendo文件夹下！<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/16.jpg" alt><br>点击下一步<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/17.jpg" alt><br>点击下一步<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/18.jpg" alt><br>创建成功!!!!<img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/19.jpg" alt><br>在/fendo目录下创建一个文本文档，输入内容，并保存为index.htm<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/24.jpg" alt></p><h4 id="测试"><a href="#测试" class="headerlink" title="测试"></a><strong>测试</strong></h4><p>然后通过浏览器访问网站:?192.168.87.129显示成功!!!（由于没有做DNS域名解析只能使用IP地址访&gt;<br>问）<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/25.jpg" alt><br>物理机也是一样的访问方式<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/26.jpg" alt></p><h2 id="祝贺自己，大功告成啦！！"><a href="#祝贺自己，大功告成啦！！" class="headerlink" title="祝贺自己，大功告成啦！！"></a><strong><span style="color:red">祝贺自己，大功告成啦！！</span></strong></h2><p>（Web文章内容摘自lfendo博主）<a href="https://blog.csdn.net/u011781521/article/details/53914335" target="_blank" rel="noopener">点击查看原文</a></p><h2 id="关于Windows服务知识暂时结束啦！"><a href="#关于Windows服务知识暂时结束啦！" class="headerlink" title="关于Windows服务知识暂时结束啦！"></a><strong>关于Windows服务知识暂时结束啦</strong>！</h2><p>下阶段再与大家学习Windows系统中的“<span style="color:red"><em>FTP服务、DHCP服务、ISCSI、网络负载均衡</em></span> “,提高专业知识一起加油吧！(/◔ ◡ ◔)/</p>]]></content>
-      
-      
+<search>
+  <entry>
+    <title>Windows学习日志</title>
+    <url>//posts/1219/</url>
+    <content><![CDATA[<h2 id="Windows-Server-2003安装IIS服务并配置WEB站点"><a href="#Windows-Server-2003安装IIS服务并配置WEB站点" class="headerlink" title="Windows Server 2003安装IIS服务并配置WEB站点"></a>Windows Server 2003安装IIS服务并配置WEB站点</h2><h4 id="一、安装IIS服务"><a href="#一、安装IIS服务" class="headerlink" title="一、安装IIS服务"></a><strong>一、安装IIS服务</strong></h4><p>简介：IIS（Internet Information Server，互联网信息服务）是一种Web（网页）服务组件，其中包<br>括Web服务器、FTP服务器、NNTP服务器和SMTP服务器，分别用于网页浏览、文件传输、新闻服务和邮&gt;<br>件发送等方面，它使得在网络（包括互联网和局域网）上发布信息成了一件很容易的事。</p>
+<h4 id="安装："><a href="#安装：" class="headerlink" title="安装："></a><strong>安装：</strong></h4><p>控制面板”，依次选“添加/删除程序”<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/1.jpg" alt><br>添加/删除Windows组件<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/2.jpg" alt><br>在应用程序服务器前打钩、点击详细信息<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/3.jpg" alt><br>将“Internet信息服务（IIS）”前的小钩去掉（如有），重新勾选中后，点击下面的详细信息<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/4.jpg" alt><br>然后添加IIS组件中的Web、FTP、NNTP和SMTP等全部四项服务。<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/5.jpg" alt><br>点击确定、然后点击下一步、就会进行安装<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/6.jpg" alt><br>安装完成后<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/7.jpg" alt><br>点击完成、当IIS添加成功之后，再进入“开始→设置→控制面板→管理工具→Internet服务管理器(I<br>IS管理器)”打开IIS管理器<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/8.jpg" alt><br>可以看到IIS有个默认站<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/9.jpg" alt></p>
+<h4 id="二、配置WEB站点"><a href="#二、配置WEB站点" class="headerlink" title="二、配置WEB站点"></a><strong>二、配置WEB站点</strong></h4><p>在Internet服务管理器(IIS管理器)中新建一个网站<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/12.jpg" alt><br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/13.jpg" alt><br>点击下一步<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/14.jpg" alt><br>点击下一步、IP为192.168.87.129 ，这是主机的IP！使用80端口！<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/15.jpg" alt><br>点击下一步、并将目录路径指向C:/fendo文件夹下！<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/16.jpg" alt><br>点击下一步<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/17.jpg" alt><br>点击下一步<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/18.jpg" alt><br>创建成功!!!!
+<img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/19.jpg" alt><br>在/fendo目录下创建一个文本文档，输入内容，并保存为index.htm<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/24.jpg" alt></p>
+<h4 id="测试"><a href="#测试" class="headerlink" title="测试"></a><strong>测试</strong></h4><p>然后通过浏览器访问网站:?192.168.87.129显示成功!!!（由于没有做DNS域名解析只能使用IP地址访&gt;<br>问）<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/25.jpg" alt><br>物理机也是一样的访问方式<br><img src="https://catl04-1259574622.cos.ap-shanghai.myqcloud.com/Web%28picture%29/26.jpg" alt></p>
+<h2 id="祝贺自己，大功告成啦！！"><a href="#祝贺自己，大功告成啦！！" class="headerlink" title="祝贺自己，大功告成啦！！"></a><strong><span style="color:red">祝贺自己，大功告成啦！！</span></strong></h2><p>（Web文章内容摘自lfendo博主）<a href="https://blog.csdn.net/u011781521/article/details/53914335" target="_blank" rel="noopener">点击查看原文</a></p>
+<h2 id="关于Windows服务知识暂时结束啦！"><a href="#关于Windows服务知识暂时结束啦！" class="headerlink" title="关于Windows服务知识暂时结束啦！"></a><strong>关于Windows服务知识暂时结束啦</strong>！</h2><p>下阶段再与大家学习Windows系统中的“<span style="color:red"><em>FTP服务、DHCP服务、ISCSI、网络负载均衡</em></span> “,提高专业知识一起加油吧！(/◔ ◡ ◔)/</p>
+]]></content>
       <categories>
-          
-          <category> Windows学习记录 </category>
-          
+        <category>Windows学习记录</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Windows </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Cisco网络设备</title>
-      <link href="//posts/1218/"/>
-      <url>//posts/1218/</url>
-      
-        <content type="html"><![CDATA[<h2 id="Cisco网络配置"><a href="#Cisco网络配置" class="headerlink" title="Cisco网络配置"></a>Cisco网络配置</h2><p>  网络专业课老师都会讲到网络配置，由于没有基础的网络知识跟不上课程进度，没办法只能慢慢学习然后记录下来，脑子记忆力不行记不下来所以写个文章，方便以后自己写查看学习。</p><h2 id="交换机配置知识点"><a href="#交换机配置知识点" class="headerlink" title="交换机配置知识点"></a><strong>交换机配置知识点</strong></h2><h2 id="知识点一：三种配置模式的切换"><a href="#知识点一：三种配置模式的切换" class="headerlink" title="知识点一：三种配置模式的切换"></a><strong><em>知识点一：三种配置模式的切换</em></strong></h2><pre><code>Switch&gt;enable                   !一般用户模式Switch#configure  terminal      !特权模式Switch(config)#                 !全局配置模式Switch(config)#interface   XX   !进入端口（如fa0/1、vlan1）Switch(config-if)#              !接口配置模式</code></pre><p><span style="color:red">Ꞡꝙ 命令不记得怎么办？</span></p><p>  <span style="color:red">小技巧1 ——  在英文输入法下  按  ？  号</span></p><p>  <span style="color:red">小技巧2 ——  输入部分开头英文 ，按  “Tab” 键</span></p><p>  <span style="color:red">小技巧3 ——  输入缩写</span></p><h4 id="配置控制台会话时间"><a href="#配置控制台会话时间" class="headerlink" title="配置控制台会话时间"></a><strong>配置控制台会话时间</strong></h4><pre><code>Switch(config)#line console 0           !进入控制台端口零Switch(config-line)#exec-timeout 0 0    !控制台消息打断输入的处理Switch(config)#line console 0           !进入控制台端口零Switch(config-line)#logging synchronous !配置日志输出同步Switch(config)#no ip domain-lookup      !禁用DNS查询Switch(config)#                         !(Ctrl+z) 返回特权模式Switch#                                 !exit 返回命令</code></pre><h4 id="配置交换机端口速率"><a href="#配置交换机端口速率" class="headerlink" title="配置交换机端口速率"></a><strong>配置交换机端口速率</strong></h4><pre><code>Switch(config)#interface FastEthernet 0/1   !进入交换机接口Fa0/1Switch(config-if)#speed 100                 !设置接口Fa0/1速率为100Mbit/sSwitch(config-if)#duplex full (half=半双工) !配置接口的双工模式是全双工Switch(config-if)#no shutdown               !开启接口，使其处于工作状态，等待数据转发Switch(config-if)#(Ctrl+z)                  !返回特权模式Switch#show interface FastEthernet 0/1      !查看接口Fa0/1的配置情况</code></pre><h4 id="配置交换机链路聚合"><a href="#配置交换机链路聚合" class="headerlink" title="配置交换机链路聚合"></a><strong>配置交换机链路聚合</strong></h4><pre><code>Sw1(config)#interface range FastEthernet 0/1-2  !进入Fa0/1、Fa0/2端口Sw1(config-if-range)#channel-group  1  mode  on !把Fa0/1、Fa0/2端口聚合为端口组1 模式为onSw1#show running-config                         !查看当前配置信息Sw2(config)#interface range FastEthernet 0/3-4  !进入Fa0/3、Fa0/4端口Sw2(config-if-range)#channel-group  1  mode  on !把Fa0/3、Fa0/4端口聚合为端口组1 模式为onSw2#show running-config                         !查看当前配置信息</code></pre><h4 id="配置交换机避免环路"><a href="#配置交换机避免环路" class="headerlink" title="配置交换机避免环路"></a><strong>配置交换机避免环路</strong></h4><pre><code>Sw1(config)#spanning-tree mode pvst             !配置Sw1为生成树模式Sw1(config)#spanning-tree mode rapid-pvst       !配置Sw1为快速生成树模式Sw1(config)#show running-config                 !查看当前配置信息Sw2(config)#spanning-tree mode pvst             !配置Sw2为生成树模式Sw2(config)#spanning-tree mode rapid-pvst       !配置Sw2为快速生成树模式Sw1(config)#show running-config                 !查看当前配置信息</code></pre><h4 id="常用的交换机显示命令"><a href="#常用的交换机显示命令" class="headerlink" title="常用的交换机显示命令"></a><strong>常用的交换机显示命令</strong></h4><pre><code>Switch#reload                           !重启设备switch#show running-config              !查看当前配置信息switch#show vlan                        !查看vlan配置信息switch#show interface                   !查看端口信息switch#show int f0/0                    !查看指定端口信息switch#dir flash                        !查看闪存switch#show version                     !查看当前版本信息switch#show history                     !显示键入过的命令列表switch#show users                       !显示连接到路由器的用户switch#show clock                       !显示路由器的时间设置switch#show vtp status                  !查看vtp配置信息switch#show interface f0/1 switchport   !查看有关switchport的配置switch#show cdp neighbors               !查看与该设备相邻的cisco设备</code></pre><h2 id="关于交换机配置知识暂时结束啦！"><a href="#关于交换机配置知识暂时结束啦！" class="headerlink" title="关于交换机配置知识暂时结束啦！"></a><strong>关于交换机配置知识暂时结束啦</strong>！</h2><p>下阶段再与大家学习交换机中的“<span style="color:red"><em>风暴控制、端口安全设置、配置端口镜像、预防ARP攻击</em></span>” <br><strong><span style="color:red">名可让，利可让，成长当仁不让</span></strong>，提高专业知识一起加油吧！(/◔ ◡ ◔)/</p><h2 id="路由器配置知识点"><a href="#路由器配置知识点" class="headerlink" title="路由器配置知识点"></a><strong><em>路由器配置知识点</em></strong></h2><p>在网络核心部分起特殊作用的是<strong>路由器</strong>，路由器是实现分组交换的<strong>关键结构</strong>，其任务是<strong>转发收到的分组</strong>。</p><p>有交换机肯定也要有路由器(除非家里有矿使用三层交换机，Σヽ(ﾟД ﾟ; )ﾉ)，在宿舍里的路由器通过接收学校的数据，然后转发出无线信号(也就是wifi)供大家连接上网。作为网络专业的学生当然也要学习啦。</p><h2 id="路由器口令设置"><a href="#路由器口令设置" class="headerlink" title="路由器口令设置"></a><strong>路由器口令设置</strong></h2><pre><code>router&gt;enable                                  !进入特权模式router#config terminal                         !进入全局配置模式router(config)#hostname xxx                    !设置交换机的主机名router(config)#enable password xxx             !设置特权非密口令router(config)#enable secret xxx               !设置特权加密口令router(config)#line console 0                  !进入控制台口router(config-line)#password xx                !设置登录口令xxrouter(config-line)#login                      !要求口令验证router(config-line)#line vty 0 4               !进入虚拟终端router(config-line)#password xx                !设置登录口令xx router(config-line)#login                      !要求口令验证</code></pre><h2 id="配置的密码忘记了怎么办？"><a href="#配置的密码忘记了怎么办？" class="headerlink" title="配置的密码忘记了怎么办？"></a><strong>配置的密码忘记了怎么办？</strong></h2><p><span style="color:red">注意看敲黑板！！！</span></p><p>重启路由器【Ctrl+Break】键中断路由器的启动过程，进入 rommon 模式。</p><pre><code>rommon 1&gt; confreg 0x2142                  !配置寄存器的值为 0x2142rommon 2&gt; reset                           !重启路由器router(config)# enable password xxx       !设置特权非密口令</code></pre><p>现在把寄存器的值恢复为正常值0x2102,然后并保存已经更改过的路由器配置,再重新启动路由器就大功告成啦！</p><pre><code>router(config)#config-register 0x2102     !恢复寄存器正常值为2102router#copy running-config startup-config !保存路由器配置的更改router#reload                             !重新启动路由器</code></pre><h6 id="祝贺自己，大功告成！！"><a href="#祝贺自己，大功告成！！" class="headerlink" title="祝贺自己，大功告成！！"></a><span style="color:red"><strong>祝贺自己，大功告成！！</strong></span></h6><h3 id="路由器配置"><a href="#路由器配置" class="headerlink" title="路由器配置"></a><strong>路由器配置</strong></h3><pre><code>router(config)#int s0/0 进入Serail接口router(config-if)#    no shutdown 激活当前接口router(config-if)#    clock rate 64000 设置同步时钟router(config-if)#    ip address 设置IP地址router(config-if)#    ip address second 设置第二个IProuter(config-if)#    int f0/0.1 进入子接口router(config-subif.1)#  ip address 设置子接口IP</code></pre><h3 id="路由器文件操作"><a href="#路由器文件操作" class="headerlink" title="路由器文件操作"></a><strong>路由器文件操作</strong></h3><pre><code>router#copy running-config startup-confi       !保存配置router#copy running-config tftp                !保存配置到tftprouter#copy startup-config tftp                !开机配置存到tftprouter#copy tftp flash                         !下传文件到flashrouter#copy tftp startup-config                !下载配置文件</code></pre><h3 id="ROM状态"><a href="#ROM状态" class="headerlink" title="ROM状态"></a><strong>ROM状态</strong></h3><pre><code>Ctrl+Break                                     !进入ROM监控状态rommon&gt;confreg 0x2142                          !跳过配置文件rommon&gt;confreg 0x2102                          !恢复配置文件rommon&gt;reset                                   !重新引导rommon&gt;copy xmodem: flash:                     !从console传输文件rommon&gt;IP_ADDRESS=10.65.1.2                    !设置路由器IPrommon&gt;IP_SUBNET_MASK=255.255.0.0              !设置路由器掩码rommon&gt;TFTP_SERVER=10.65.1.1                   !指定TFTP服务器IPrommon&gt;TFTP_FILE=c2600.bin                     !指定下载的文件rommon&gt;tftpdnld                                !从tftp下载rommon&gt;dir flash:                              !查看闪存内容rommon&gt;boot                                    !引导IOS</code></pre><h3 id="静态路由"><a href="#静态路由" class="headerlink" title="静态路由"></a><strong>静态路由</strong></h3><pre><code>ip route 命令格式router(config)#ip route 目的地址 目的掩码 下一跳地址router(config)#ip route 2.0.0.0 255.0.0.0 1.1.1.2 !静态路由举例router(config)#ip route 0.0.0.0 0.0.0.0 1.1.1.2   !默认路由举例router#show ip route                              !查看路由地址表</code></pre><h3 id="动态路由"><a href="#动态路由" class="headerlink" title="动态路由"></a><strong>动态路由</strong></h3><pre><code>router(config)#ip routing                         !启动路由转发router(config)#router rip                         !启动RIP路由协议router(config-router)#version 2  (默认是版本1)    !指定RIP协议的版本router(config-router)#network                     !设置发布路由router(config-router)#no auto-summary             !关闭版本自动汇总</code></pre><h2 id="关于路由器配置知识暂时结束啦！"><a href="#关于路由器配置知识暂时结束啦！" class="headerlink" title="关于路由器配置知识暂时结束啦！"></a><strong>关于路由器配置知识暂时结束啦</strong>！</h2><p>下阶段再与大家学习路由器中的“<span style="color:red"><em>单臂路由、OSPF单区域路由协议、OSPF多区域路由协议、混合路由</em> </span> ”<br><strong><span style="color:red">不知就问，不懂就学</span></strong>，提高专业知识一起加油吧！(/◔ ◡ ◔)/</p>]]></content>
-      
-      
+      <tags>
+        <tag>Windows</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Cisco网络设备</title>
+    <url>//posts/1218/</url>
+    <content><![CDATA[<h2 id="Cisco网络配置"><a href="#Cisco网络配置" class="headerlink" title="Cisco网络配置"></a>Cisco网络配置</h2><p>  网络专业课老师都会讲到网络配置，由于没有基础的网络知识跟不上课程进度，没办法只能慢慢学习然后记录下来，脑子记忆力不行记不下来所以写个文章，方便以后自己写查看学习。</p>
+<h2 id="交换机配置知识点"><a href="#交换机配置知识点" class="headerlink" title="交换机配置知识点"></a><strong>交换机配置知识点</strong></h2><h2 id="知识点一：三种配置模式的切换"><a href="#知识点一：三种配置模式的切换" class="headerlink" title="知识点一：三种配置模式的切换"></a><strong><em>知识点一：三种配置模式的切换</em></strong></h2><pre><code>Switch&gt;enable                   !一般用户模式
+Switch#configure  terminal      !特权模式
+Switch(config)#                 !全局配置模式
+Switch(config)#interface   XX   !进入端口（如fa0/1、vlan1）
+Switch(config-if)#              !接口配置模式</code></pre><p><span style="color:red">Ꞡꝙ 命令不记得怎么办？</span></p>
+<p>  <span style="color:red">小技巧1 ——  在英文输入法下  按  ？  号</span></p>
+<p>  <span style="color:red">小技巧2 ——  输入部分开头英文 ，按  “Tab” 键</span></p>
+<p>  <span style="color:red">小技巧3 ——  输入缩写</span></p>
+<h4 id="配置控制台会话时间"><a href="#配置控制台会话时间" class="headerlink" title="配置控制台会话时间"></a><strong>配置控制台会话时间</strong></h4><pre><code>Switch(config)#line console 0           !进入控制台端口零
+Switch(config-line)#exec-timeout 0 0    !控制台消息打断输入的处理
+Switch(config)#line console 0           !进入控制台端口零
+Switch(config-line)#logging synchronous !配置日志输出同步
+Switch(config)#no ip domain-lookup      !禁用DNS查询
+Switch(config)#                         !(Ctrl+z) 返回特权模式
+Switch#                                 !exit 返回命令</code></pre><h4 id="配置交换机端口速率"><a href="#配置交换机端口速率" class="headerlink" title="配置交换机端口速率"></a><strong>配置交换机端口速率</strong></h4><pre><code>Switch(config)#interface FastEthernet 0/1   !进入交换机接口Fa0/1
+Switch(config-if)#speed 100                 !设置接口Fa0/1速率为100Mbit/s
+Switch(config-if)#duplex full (half=半双工) !配置接口的双工模式是全双工
+Switch(config-if)#no shutdown               !开启接口，使其处于工作状态，等待数据转发
+Switch(config-if)#(Ctrl+z)                  !返回特权模式
+Switch#show interface FastEthernet 0/1      !查看接口Fa0/1的配置情况</code></pre><h4 id="配置交换机链路聚合"><a href="#配置交换机链路聚合" class="headerlink" title="配置交换机链路聚合"></a><strong>配置交换机链路聚合</strong></h4><pre><code>Sw1(config)#interface range FastEthernet 0/1-2  !进入Fa0/1、Fa0/2端口
+Sw1(config-if-range)#channel-group  1  mode  on !把Fa0/1、Fa0/2端口聚合为端口组1 模式为on
+Sw1#show running-config                         !查看当前配置信息
+Sw2(config)#interface range FastEthernet 0/3-4  !进入Fa0/3、Fa0/4端口
+Sw2(config-if-range)#channel-group  1  mode  on !把Fa0/3、Fa0/4端口聚合为端口组1 模式为on
+Sw2#show running-config                         !查看当前配置信息</code></pre><h4 id="配置交换机避免环路"><a href="#配置交换机避免环路" class="headerlink" title="配置交换机避免环路"></a><strong>配置交换机避免环路</strong></h4><pre><code>Sw1(config)#spanning-tree mode pvst             !配置Sw1为生成树模式
+Sw1(config)#spanning-tree mode rapid-pvst       !配置Sw1为快速生成树模式
+Sw1(config)#show running-config                 !查看当前配置信息
+Sw2(config)#spanning-tree mode pvst             !配置Sw2为生成树模式
+Sw2(config)#spanning-tree mode rapid-pvst       !配置Sw2为快速生成树模式
+Sw1(config)#show running-config                 !查看当前配置信息</code></pre><h4 id="常用的交换机显示命令"><a href="#常用的交换机显示命令" class="headerlink" title="常用的交换机显示命令"></a><strong>常用的交换机显示命令</strong></h4><pre><code>Switch#reload                           !重启设备
+switch#show running-config              !查看当前配置信息
+switch#show vlan                        !查看vlan配置信息
+switch#show interface                   !查看端口信息
+switch#show int f0/0                    !查看指定端口信息
+switch#dir flash                        !查看闪存
+switch#show version                     !查看当前版本信息
+switch#show history                     !显示键入过的命令列表
+switch#show users                       !显示连接到路由器的用户
+switch#show clock                       !显示路由器的时间设置
+switch#show vtp status                  !查看vtp配置信息
+switch#show interface f0/1 switchport   !查看有关switchport的配置
+switch#show cdp neighbors               !查看与该设备相邻的cisco设备</code></pre><h2 id="关于交换机配置知识暂时结束啦！"><a href="#关于交换机配置知识暂时结束啦！" class="headerlink" title="关于交换机配置知识暂时结束啦！"></a><strong>关于交换机配置知识暂时结束啦</strong>！</h2><p>下阶段再与大家学习交换机中的“<span style="color:red"><em>风暴控制、端口安全设置、配置端口镜像、预防ARP攻击</em></span>” <br><strong><span style="color:red">名可让，利可让，成长当仁不让</span></strong>，提高专业知识一起加油吧！(/◔ ◡ ◔)/</p>
+<h2 id="路由器配置知识点"><a href="#路由器配置知识点" class="headerlink" title="路由器配置知识点"></a><strong><em>路由器配置知识点</em></strong></h2><p>在网络核心部分起特殊作用的是<strong>路由器</strong>，路由器是实现分组交换的<strong>关键结构</strong>，其任务是<strong>转发收到的分组</strong>。</p>
+<p>有交换机肯定也要有路由器(除非家里有矿使用三层交换机，Σヽ(ﾟД ﾟ; )ﾉ)，在宿舍里的路由器通过接收学校的数据，然后转发出无线信号(也就是wifi)供大家连接上网。作为网络专业的学生当然也要学习啦。</p>
+<h2 id="路由器口令设置"><a href="#路由器口令设置" class="headerlink" title="路由器口令设置"></a><strong>路由器口令设置</strong></h2><pre><code>router&gt;enable                                  !进入特权模式
+router#config terminal                         !进入全局配置模式
+router(config)#hostname xxx                    !设置交换机的主机名
+router(config)#enable password xxx             !设置特权非密口令
+router(config)#enable secret xxx               !设置特权加密口令
+router(config)#line console 0                  !进入控制台口
+router(config-line)#password xx                !设置登录口令xx
+router(config-line)#login                      !要求口令验证
+router(config-line)#line vty 0 4               !进入虚拟终端
+router(config-line)#password xx                !设置登录口令xx 
+router(config-line)#login                      !要求口令验证</code></pre><h2 id="配置的密码忘记了怎么办？"><a href="#配置的密码忘记了怎么办？" class="headerlink" title="配置的密码忘记了怎么办？"></a><strong>配置的密码忘记了怎么办？</strong></h2><p><span style="color:red">注意看敲黑板！！！</span></p>
+<p>重启路由器【Ctrl+Break】键中断路由器的启动过程，进入 rommon 模式。</p>
+<pre><code>rommon 1&gt; confreg 0x2142                  !配置寄存器的值为 0x2142
+rommon 2&gt; reset                           !重启路由器
+router(config)# enable password xxx       !设置特权非密口令</code></pre><p>现在把寄存器的值恢复为正常值0x2102,然后并保存已经更改过的路由器配置,再重新启动路由器就大功告成啦！</p>
+<pre><code>router(config)#config-register 0x2102     !恢复寄存器正常值为2102
+router#copy running-config startup-config !保存路由器配置的更改
+router#reload                             !重新启动路由器</code></pre><h6 id="祝贺自己，大功告成！！"><a href="#祝贺自己，大功告成！！" class="headerlink" title="祝贺自己，大功告成！！"></a><span style="color:red"><strong>祝贺自己，大功告成！！</strong></span></h6><h3 id="路由器配置"><a href="#路由器配置" class="headerlink" title="路由器配置"></a><strong>路由器配置</strong></h3><pre><code>router(config)#int s0/0 进入Serail接口
+router(config-if)#    no shutdown 激活当前接口
+router(config-if)#    clock rate 64000 设置同步时钟
+router(config-if)#    ip address 设置IP地址
+router(config-if)#    ip address second 设置第二个IP
+router(config-if)#    int f0/0.1 进入子接口
+router(config-subif.1)#  ip address 设置子接口IP</code></pre><h3 id="路由器文件操作"><a href="#路由器文件操作" class="headerlink" title="路由器文件操作"></a><strong>路由器文件操作</strong></h3><pre><code>router#copy running-config startup-confi       !保存配置
+router#copy running-config tftp                !保存配置到tftp
+router#copy startup-config tftp                !开机配置存到tftp
+router#copy tftp flash                         !下传文件到flash
+router#copy tftp startup-config                !下载配置文件</code></pre><h3 id="ROM状态"><a href="#ROM状态" class="headerlink" title="ROM状态"></a><strong>ROM状态</strong></h3><pre><code>Ctrl+Break                                     !进入ROM监控状态
+rommon&gt;confreg 0x2142                          !跳过配置文件
+rommon&gt;confreg 0x2102                          !恢复配置文件
+rommon&gt;reset                                   !重新引导
+rommon&gt;copy xmodem: flash:                     !从console传输文件
+rommon&gt;IP_ADDRESS=10.65.1.2                    !设置路由器IP
+rommon&gt;IP_SUBNET_MASK=255.255.0.0              !设置路由器掩码
+rommon&gt;TFTP_SERVER=10.65.1.1                   !指定TFTP服务器IP
+rommon&gt;TFTP_FILE=c2600.bin                     !指定下载的文件
+rommon&gt;tftpdnld                                !从tftp下载
+rommon&gt;dir flash:                              !查看闪存内容
+rommon&gt;boot                                    !引导IOS</code></pre><h3 id="静态路由"><a href="#静态路由" class="headerlink" title="静态路由"></a><strong>静态路由</strong></h3><pre><code>ip route 命令格式
+router(config)#ip route 目的地址 目的掩码 下一跳地址
+router(config)#ip route 2.0.0.0 255.0.0.0 1.1.1.2 !静态路由举例
+router(config)#ip route 0.0.0.0 0.0.0.0 1.1.1.2   !默认路由举例
+router#show ip route                              !查看路由地址表</code></pre><h3 id="动态路由"><a href="#动态路由" class="headerlink" title="动态路由"></a><strong>动态路由</strong></h3><pre><code>router(config)#ip routing                         !启动路由转发
+router(config)#router rip                         !启动RIP路由协议
+router(config-router)#version 2  (默认是版本1)    !指定RIP协议的版本
+router(config-router)#network                     !设置发布路由
+router(config-router)#no auto-summary             !关闭版本自动汇总</code></pre><h2 id="关于路由器配置知识暂时结束啦！"><a href="#关于路由器配置知识暂时结束啦！" class="headerlink" title="关于路由器配置知识暂时结束啦！"></a><strong>关于路由器配置知识暂时结束啦</strong>！</h2><p>下阶段再与大家学习路由器中的“<span style="color:red"><em>单臂路由、OSPF单区域路由协议、OSPF多区域路由协议、混合路由</em> </span> ”<br><strong><span style="color:red">不知就问，不懂就学</span></strong>，提高专业知识一起加油吧！(/◔ ◡ ◔)/</p>
+]]></content>
       <categories>
-          
-          <category> Cisco学习记录 </category>
-          
+        <category>Cisco学习记录</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Cisco </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Windows搭建hexo</title>
-      <link href="//posts/628/"/>
-      <url>//posts/628/</url>
-      
-        <content type="html"><![CDATA[<h2 id="Windows环境部署Hexo"><a href="#Windows环境部署Hexo" class="headerlink" title="Windows环境部署Hexo"></a>Windows环境部署Hexo</h2><p>前文介绍了Nginx+GitHub部署Hexo是基于Linux环境下，本文介绍了Windwos环境下如何部署Hexo，在Windows下部署相对Linux简单了很多，现记录部署过程。</p><h3 id="1-安装Git-Bash"><a href="#1-安装Git-Bash" class="headerlink" title="1.安装Git Bash"></a>1.安装Git Bash</h3><p>打开Git官网<a href="https://www.git-scm.com" target="_blank" rel="noopener">Git官网</a>下载一个Windows版的Git安装程序</p><p>安装组件：这里可以使用默认选项，点击【Next &gt;】</p><ul><li>图标组件（Additional icons）：选择是否创建桌面快捷方式</li><li>桌面浏览（Windows Explorer integration）<ul><li>使用Git Bash方式，shell方式</li><li>受用桌面程序方式</li></ul></li><li>关联配置文件：是否关联git配置文件，该配置文件主要显示文本编辑器样式</li><li>关联shell脚本文件：是否关联Bash命令执行脚本文件</li><li>使用TrueType编码：在命令行中是否使用TrueType编码，该编码是微软和苹果公司制定的通用编码</li></ul><p>Git自带：使用Git自带的Git Bash命令行工具</p><p>系统自带CMD：使用windows系统的命令行工具</p><p>二者都有：上面二者同时配置，但是注意，这样会将windows中的find.exe和sort.exe工具覆盖，如果不懂这些尽量不要选择</p><p>其余默认下一步即可完成安装。</p><h3 id="2-安装Node-js"><a href="#2-安装Node-js" class="headerlink" title="2.安装Node.js"></a>2.安装Node.js</h3><p>因为Hexo基于Node.js开发，所以不管我们是Windwos环境还是Linux环境都需要安装Node.js才能完成Hexo的搭建，安装过程也很简单。</p><p>打开Node.js官网下载<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js官网</a></p><p>安装过程中这个Add to PATH要记得勾选，不然自己配置环境变量很麻烦</p><h3 id="3-安装Hexo框架-部署GitHub"><a href="#3-安装Hexo框架-部署GitHub" class="headerlink" title="3.安装Hexo框架+部署GitHub"></a>3.安装Hexo框架+部署GitHub</h3><h4 id="3-1安装Hexo"><a href="#3-1安装Hexo" class="headerlink" title="3.1安装Hexo"></a>3.1安装Hexo</h4><p>在Git Bash或者cmd中输入命令安装Hexo</p><pre><code>npm install -g hexo-cli</code></pre><p>等待进度条走完输入 <code>hexo -v</code>输出一系列的版本号就安装完成了</p><h4 id="3-2部署至GitHub"><a href="#3-2部署至GitHub" class="headerlink" title="3.2部署至GitHub"></a>3.2部署至GitHub</h4><p>部署方法同上文Nginx+GItHub就不做详细记录了</p>]]></content>
-      
-      
+      <tags>
+        <tag>Cisco</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows搭建hexo</title>
+    <url>//posts/628/</url>
+    <content><![CDATA[<h2 id="Windows环境部署Hexo"><a href="#Windows环境部署Hexo" class="headerlink" title="Windows环境部署Hexo"></a>Windows环境部署Hexo</h2><p>前文介绍了Nginx+GitHub部署Hexo是基于Linux环境下，本文介绍了Windwos环境下如何部署Hexo，在Windows下部署相对Linux简单了很多，现记录部署过程。</p>
+<h3 id="1-安装Git-Bash"><a href="#1-安装Git-Bash" class="headerlink" title="1.安装Git Bash"></a>1.安装Git Bash</h3><p>打开Git官网<a href="https://www.git-scm.com" target="_blank" rel="noopener">Git官网</a>下载一个Windows版的Git安装程序</p>
+<p>安装组件：这里可以使用默认选项，点击【Next &gt;】</p>
+<ul>
+<li>图标组件（Additional icons）：选择是否创建桌面快捷方式</li>
+<li>桌面浏览（Windows Explorer integration）<ul>
+<li>使用Git Bash方式，shell方式</li>
+<li>受用桌面程序方式</li>
+</ul>
+</li>
+<li>关联配置文件：是否关联git配置文件，该配置文件主要显示文本编辑器样式</li>
+<li>关联shell脚本文件：是否关联Bash命令执行脚本文件</li>
+<li>使用TrueType编码：在命令行中是否使用TrueType编码，该编码是微软和苹果公司制定的通用编码</li>
+</ul>
+<p>Git自带：使用Git自带的Git Bash命令行工具</p>
+<p>系统自带CMD：使用windows系统的命令行工具</p>
+<p>二者都有：上面二者同时配置，但是注意，这样会将windows中的find.exe和sort.exe工具覆盖，如果不懂这些尽量不要选择</p>
+<p>其余默认下一步即可完成安装。</p>
+<h3 id="2-安装Node-js"><a href="#2-安装Node-js" class="headerlink" title="2.安装Node.js"></a>2.安装Node.js</h3><p>因为Hexo基于Node.js开发，所以不管我们是Windwos环境还是Linux环境都需要安装Node.js才能完成Hexo的搭建，安装过程也很简单。</p>
+<p>打开Node.js官网下载<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js官网</a></p>
+<p>安装过程中这个Add to PATH要记得勾选，不然自己配置环境变量很麻烦</p>
+<h3 id="3-安装Hexo框架-部署GitHub"><a href="#3-安装Hexo框架-部署GitHub" class="headerlink" title="3.安装Hexo框架+部署GitHub"></a>3.安装Hexo框架+部署GitHub</h3><h4 id="3-1安装Hexo"><a href="#3-1安装Hexo" class="headerlink" title="3.1安装Hexo"></a>3.1安装Hexo</h4><p>在Git Bash或者cmd中输入命令安装Hexo</p>
+<pre><code>npm install -g hexo-cli</code></pre><p>等待进度条走完输入 <code>hexo -v</code>输出一系列的版本号就安装完成了</p>
+<h4 id="3-2部署至GitHub"><a href="#3-2部署至GitHub" class="headerlink" title="3.2部署至GitHub"></a>3.2部署至GitHub</h4><p>部署方法同上文Nginx+GItHub就不做详细记录了</p>
+]]></content>
       <categories>
-          
-          <category> Hexo博客记录 </category>
-          
+        <category>Hexo博客记录</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Nginx+Github部署Hexo</title>
-      <link href="//posts/627/"/>
-      <url>//posts/627/</url>
-      
-        <content type="html"><![CDATA[<h3 id="Nginx-Github部署Hexo"><a href="#Nginx-Github部署Hexo" class="headerlink" title="Nginx+Github部署Hexo"></a>Nginx+Github部署Hexo</h3><p> 看到朋友搭建博客，就想搭建一个属于自己的博客，听朋友介绍了Hexo这个静态博客框架，经过几天研究和朋友的讲解终于将它搭建成功，现在将搭建过程和遇到的坑记录下来，以供大家学习。</p><h3 id="1-安装Git"><a href="#1-安装Git" class="headerlink" title="1.安装Git"></a>1.安装Git</h3><p> 因为Centos7的yum仓库里面Git版本比较旧所以我们采用源码安装新版Git</p><h4 id="1-1安装编译源码依赖包"><a href="#1-1安装编译源码依赖包" class="headerlink" title="1.1安装编译源码依赖包"></a>1.1安装编译源码依赖包</h4><pre><code>yum install -y curl-devel expat-devel gettext-devel openssl-devel zlib-devel</code></pre><pre><code>yum install -y gcc perl-ExtUtils-MakeMaker</code></pre><h4 id="1-2卸载老版本Git"><a href="#1-2卸载老版本Git" class="headerlink" title="1.2卸载老版本Git"></a>1.2卸载老版本Git</h4><pre><code>yum remove -y git</code></pre><h4 id="1-3下载新版Git"><a href="#1-3下载新版Git" class="headerlink" title="1.3下载新版Git"></a>1.3下载新版Git</h4><p><a href="https://mirrors.edge.kernel.org/pub/software/scm/git/" target="_blank" rel="noopener">下载Git链接</a></p><p>这是Git下载目录自行找最新版本</p><pre><code>wget https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.9.5.tar.xz    //写下文章时最新版本</code></pre><pre><code>xz -d git-2.9.5.tar.xz          //将xz解压然后得到tar格式压缩文件 tar xvf git-2.9.5.tar         //解压tar文件</code></pre><h4 id="1-4编译安装Git"><a href="#1-4编译安装Git" class="headerlink" title="1.4编译安装Git"></a>1.4编译安装Git</h4><pre><code>cd git-2.9.5      //进入文件夹make prefix=/usr/local/git all     //编译至该目录下make prefix=/usr/local/git install   //安装到该目录</code></pre><p>注意：先编译在安装，编译速度取决于机器性能，等待一下就好了</p><p>编译好后配置环境变量</p><pre><code>vim /etc/profile</code></pre><p>在文件最下面写入变量</p><pre><code>export PATH=$PATH:/usr/local/git/bin    //这个目录是刚刚编译安装Git的目录</code></pre><p>配置好变量后刷新一下</p><pre><code>source /etc/profile</code></pre><p>最后用git –version查看版本，可以看到Git的版本号为<code>2.9.5</code>表示已经安装成功了</p><h3 id="2-配置Git用户"><a href="#2-配置Git用户" class="headerlink" title="2.配置Git用户"></a>2.配置Git用户</h3><pre><code>adduser gitpasswd gitchmod 740 /etc/sudoersvim /etc/sudoers</code></pre><p>在配置中找到这条记录</p><pre><code>## Allow root to run any commands anywhereroot    ALL=(ALL)       ALL</code></pre><p>添加Git的配置</p><pre><code>git ALL=(ALL) ALL</code></pre><p>然后把权限改回来 chmod 400 /etc/sudoers</p><h3 id="3-安装及配置Nginx"><a href="#3-安装及配置Nginx" class="headerlink" title="3.安装及配置Nginx"></a>3.安装及配置Nginx</h3><p>因为我的Yum仓库里有Nginx的包所以就直接Yum安装了，如果你的没有就自行百度Nginx的安装</p><h4 id="3-1安装Nginx"><a href="#3-1安装Nginx" class="headerlink" title="3.1安装Nginx"></a>3.1安装Nginx</h4><pre><code>yum install -y nginx    //安装Nginxsystemctl start nginx  //启动Nginxsystemctl enable nginx //开机启动Nginx</code></pre><h4 id="3-2配置Nginx"><a href="#3-2配置Nginx" class="headerlink" title="3.2配置Nginx"></a>3.2配置Nginx</h4><p>针对不同版本不同方式安装的Nginx配置文件位置可能不一样，我们可以用<code>nginx -t</code>查看配置文件位置，也可以用检查语法错误,我的配置文件在<code>/etc/nginx/nginx.conf</code>下</p><p><code>vim /etc/nginx/nginx.conf</code>命令进行编辑</p><pre><code>server {            listen               80 default_server;            listen               [ : : ]:80  default_server;            server_name    www.yangzhiwen.work;        #修改成你的域名            root                /MyBlog/public/;              #修改成网站目录下的public文件夹           # Load  configuration  files  for  the  default  server  block.            include /etc/nginx/default.d/*.conf;            location / {            }            error_page  404  /404.html;                  location = /40x.html {            }             error_page 500  502  503  504  /50x.html;                 location  =  /50x.html {            }        }</code></pre><p>然后<code>systemctl restart nginx</code>重启 服务</p><h3 id="4-安装Node-js"><a href="#4-安装Node-js" class="headerlink" title="4.安装Node.js"></a>4.安装Node.js</h3><h4 id="4-1下载Node-js"><a href="#4-1下载Node-js" class="headerlink" title="4.1下载Node.js"></a>4.1下载Node.js</h4><p><a href="https://nodejs.org/dist/" target="_blank" rel="noopener">下载Ngde.js链接</a></p><p>这是Node.js下载目录自行寻找最新版本</p><pre><code>wget https://nodejs.org/dist/v12.4.0/node-v12.4.0-linux-x64.tar.xz</code></pre><h4 id="4-2解压Node-js压缩包"><a href="#4-2解压Node-js压缩包" class="headerlink" title="4.2解压Node.js压缩包"></a>4.2解压Node.js压缩包</h4><pre><code>xz -d node-v12.4.0-linux-x64.tar.xztar -xvf node-v12.4.0-linux-x64.tar.xz</code></pre><p>移动到<code>/usr/local/node</code>目录下</p><pre><code>mv node-v12.4.0-linux-x64 /usr/local/node</code></pre><h4 id="4-3配置环境变量"><a href="#4-3配置环境变量" class="headerlink" title="4.3配置环境变量"></a>4.3配置环境变量</h4><pre><code>vim /etc/profile#编辑这个文件export PATH=$PATH:/usr/local/node/bin#添加内容，指定Node目录source /etc/profile#刷新一下环境</code></pre><p>输入<code>node -v</code>测试Node.js是否安装成功，输出版本即完成安装</p><h3 id="5-安装Hexo框架"><a href="#5-安装Hexo框架" class="headerlink" title="5.安装Hexo框架"></a>5.安装Hexo框架</h3><h4 id="5-1创建博客目录"><a href="#5-1创建博客目录" class="headerlink" title="5.1创建博客目录"></a>5.1创建博客目录</h4><p>这里的目录应该是刚刚Nginx里配置的目录，不然Nginx方式访问不上</p><pre><code>mkdir /MyBlog#创建目录cd /MyBlog#进入目录</code></pre><h4 id="5-2安装Hexo"><a href="#5-2安装Hexo" class="headerlink" title="5.2安装Hexo"></a>5.2安装Hexo</h4><pre><code>npm install -g hexo-cli</code></pre><h4 id="5-4修改配置"><a href="#5-4修改配置" class="headerlink" title="5.4修改配置"></a>5.4修改配置</h4><pre><code>vim _config.yml</code></pre><pre><code># Hexo Configuration ## Docs: https://hexo.io/docs/configuration.html ## Source: https://github.com/hexojs/hexo/ # Site 站点信息设置 title:   杨梅君博客            #站点名字 subtitle:   #副标题 description:  #站描述 author: 杨梅君 #作者 language: zh-CN #语言 timezone:  #URL 链接设置 ## If your site is put in a subdirectory, set url as &#39;http://yoursite.com/child&#39; and root as &#39;/child/&#39; url: http://www.yangzhiwen.work #设置成你的域名 root: / permalink: :year/:month/:day/:title/ permalink_defaults: -----------------------------------------------------------------略 deploy:     type: git    repo: git@github.com:mocorochio/micorochio.github.io.git #git仓库地址     branch: master     message: &#39;站点更新:{{now("YYYY-MM-DD HH/mm/ss")}}&#39;</code></pre><h3 id="6-部署到GitHub上"><a href="#6-部署到GitHub上" class="headerlink" title="6.部署到GitHub上"></a>6.部署到GitHub上</h3><h4 id="6-1设置本机Git全局配置"><a href="#6-1设置本机Git全局配置" class="headerlink" title="6.1设置本机Git全局配置"></a>6.1设置本机Git全局配置</h4><pre><code>git config --global user.email 2example@qq.com  //这里的eamil改成自己GitHub上的邮件地址git config --global user.name Catl07   //这里的name改成你Github的用户名</code></pre><h4 id="6-2生成ssh密码"><a href="#6-2生成ssh密码" class="headerlink" title="6.2生成ssh密码"></a>6.2生成ssh密码</h4><p>生成ssh密钥的作用是将本地文件部署到Github</p><pre><code>cd   //进到根目录ssh-keygen -t rsa -C example@qq.com    //不带-C和自己用户名邮箱Github不认可less .ssh/id_rsa.pub     /查看密钥</code></pre><h4 id="6-3创建博客工程"><a href="#6-3创建博客工程" class="headerlink" title="6.3创建博客工程"></a>6.3创建博客工程</h4><p>敲黑板！！！注意看！！！</p><h5 id="6-3-1新建一个储存库"><a href="#6-3-1新建一个储存库" class="headerlink" title="6.3.1新建一个储存库"></a>6.3.1新建一个储存库</h5><p>登录到你的GitHub然后点击这个位置，进去新建一个储存库</p><p><img src="https://catl07-1259398274.cos.ap-chengdu.myqcloud.com/Nginx%2BGitHub-bushu-Hexo/GitHub%E6%AD%A5%E9%AA%A41.PNG" alt></p><p>重点来了！ 名字设置成<code>你的用户名.github.io</code> 不然网站可能访问不上</p><p><img src="https://catl07-1259398274.cos.ap-chengdu.myqcloud.com/Nginx%2BGitHub-bushu-Hexo/GitHub%E6%AD%A5%E9%AA%A42.PNG" alt></p><p>因为我的用户名是Catl04所以库名字叫Catl04.github.io</p><h5 id="6-3-2在GitHub上导入ssh密钥"><a href="#6-3-2在GitHub上导入ssh密钥" class="headerlink" title="6.3.2在GitHub上导入ssh密钥"></a>6.3.2在GitHub上导入ssh密钥</h5><p>执行<code>less ~/.ssh/id_rsa.pub</code>将内容全部复制</p><p><img src="https://catl07-1259398274.cos.ap-chengdu.myqcloud.com/Nginx%2BGitHub-bushu-Hexo/ssh%E7%A4%BA%E4%BE%8B.png" alt></p><p>进入秘钥设置面板:<a href="https://link.jianshu.com/?t=https://github.com/settings/ssh" target="_blank" rel="noopener">https://github.com/settings/ssh</a> 将复制内容全部复制到GitHub里面</p><h5 id="6-3-3配置Hexo与GitHub仓库同步"><a href="#6-3-3配置Hexo与GitHub仓库同步" class="headerlink" title="6.3.3配置Hexo与GitHub仓库同步"></a>6.3.3配置Hexo与GitHub仓库同步</h5><pre><code>#这里不能弄错，不然部署不上去deploy:  type: git  repo: https://github.com/Catl04/Catl04.github.io.git     #git仓库地址  branch: master             message: &#39;站点更新:{{now("YYYY-MM-DD HH/mm/ss")}}&#39;</code></pre><p>下面是获取仓库地址</p><p><img src="https://catl07-1259398274.cos.ap-chengdu.myqcloud.com/Nginx%2BGitHub-bushu-Hexo/%E4%BB%93%E5%BA%93%E5%9C%B0%E5%9D%80%E8%8E%B7%E5%8F%96.PNG" alt></p><h3 id="修改主题"><a href="#修改主题" class="headerlink" title=".修改主题"></a>.修改主题</h3><h4 id="7-1主题下载"><a href="#7-1主题下载" class="headerlink" title="7.1主题下载"></a>7.1主题下载</h4><p><a href="https://hexo.io/themes/" target="_blank" rel="noopener">主题链接</a> 这是其他博主分享的主题，找一个自己喜欢的下载</p><h4 id="7-2使用主题"><a href="#7-2使用主题" class="headerlink" title="7.2使用主题"></a>7.2使用主题</h4><p>通过工具上传主题到博客目录下一个名叫<code>theme</code>文件夹内然后编辑主目录下的_config.yml</p><pre><code>#找到theme值  修改成你下载主题解压出来的文件夹名称</code></pre><h3 id="8-部署与访问测试"><a href="#8-部署与访问测试" class="headerlink" title="8.部署与访问测试"></a>8.部署与访问测试</h3><p><strong>部署:</strong></p><p>Ps:在本地博客文件目录</p><pre><code>hexo generate #编译Hexohexo d#将本地库更新至GitHub仓库</code></pre><p>执行<code>hexo d</code>后报如下错</p><pre><code>ERROR Deployer not found: git</code></pre><p>这是没有部署插件安装一下就好了</p><pre><code>npm install --save hexo-deployer-git</code></pre><p>再次部署就发现成功了</p><p><strong>访问</strong>:</p><p><a href="https://Catl04.github.io">https://Catl04.github.io</a></p><p>将<code>catl04</code>改成你的用户名就能访问了。</p>]]></content>
-      
-      
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Nginx+Github部署Hexo</title>
+    <url>//posts/627/</url>
+    <content><![CDATA[<h3 id="Nginx-Github部署Hexo"><a href="#Nginx-Github部署Hexo" class="headerlink" title="Nginx+Github部署Hexo"></a>Nginx+Github部署Hexo</h3><p> 看到朋友搭建博客，就想搭建一个属于自己的博客，听朋友介绍了Hexo这个静态博客框架，经过几天研究和朋友的讲解终于将它搭建成功，现在将搭建过程和遇到的坑记录下来，以供大家学习。</p>
+<h3 id="1-安装Git"><a href="#1-安装Git" class="headerlink" title="1.安装Git"></a>1.安装Git</h3><p> 因为Centos7的yum仓库里面Git版本比较旧所以我们采用源码安装新版Git</p>
+<h4 id="1-1安装编译源码依赖包"><a href="#1-1安装编译源码依赖包" class="headerlink" title="1.1安装编译源码依赖包"></a>1.1安装编译源码依赖包</h4><pre><code>yum install -y curl-devel expat-devel gettext-devel openssl-devel zlib-devel</code></pre><pre><code>yum install -y gcc perl-ExtUtils-MakeMaker</code></pre><h4 id="1-2卸载老版本Git"><a href="#1-2卸载老版本Git" class="headerlink" title="1.2卸载老版本Git"></a>1.2卸载老版本Git</h4><pre><code>yum remove -y git</code></pre><h4 id="1-3下载新版Git"><a href="#1-3下载新版Git" class="headerlink" title="1.3下载新版Git"></a>1.3下载新版Git</h4><p><a href="https://mirrors.edge.kernel.org/pub/software/scm/git/" target="_blank" rel="noopener">下载Git链接</a></p>
+<p>这是Git下载目录自行找最新版本</p>
+<pre><code>wget https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.9.5.tar.xz    //写下文章时最新版本</code></pre><pre><code>xz -d git-2.9.5.tar.xz          //将xz解压然后得到tar格式压缩文件
+ tar xvf git-2.9.5.tar         //解压tar文件</code></pre><h4 id="1-4编译安装Git"><a href="#1-4编译安装Git" class="headerlink" title="1.4编译安装Git"></a>1.4编译安装Git</h4><pre><code>cd git-2.9.5      //进入文件夹
+make prefix=/usr/local/git all     //编译至该目录下
+make prefix=/usr/local/git install   //安装到该目录</code></pre><p>注意：先编译在安装，编译速度取决于机器性能，等待一下就好了</p>
+<p>编译好后配置环境变量</p>
+<pre><code>vim /etc/profile</code></pre><p>在文件最下面写入变量</p>
+<pre><code>export PATH=$PATH:/usr/local/git/bin    //这个目录是刚刚编译安装Git的目录</code></pre><p>配置好变量后刷新一下</p>
+<pre><code>source /etc/profile</code></pre><p>最后用git –version查看版本，可以看到Git的版本号为<code>2.9.5</code>表示已经安装成功了</p>
+<h3 id="2-配置Git用户"><a href="#2-配置Git用户" class="headerlink" title="2.配置Git用户"></a>2.配置Git用户</h3><pre><code>adduser git
+passwd git
+chmod 740 /etc/sudoers
+vim /etc/sudoers</code></pre><p>在配置中找到这条记录</p>
+<pre><code>## Allow root to run any commands anywhere
+root    ALL=(ALL)       ALL</code></pre><p>添加Git的配置</p>
+<pre><code>git ALL=(ALL) ALL</code></pre><p>然后把权限改回来 chmod 400 /etc/sudoers</p>
+<h3 id="3-安装及配置Nginx"><a href="#3-安装及配置Nginx" class="headerlink" title="3.安装及配置Nginx"></a>3.安装及配置Nginx</h3><p>因为我的Yum仓库里有Nginx的包所以就直接Yum安装了，如果你的没有就自行百度Nginx的安装</p>
+<h4 id="3-1安装Nginx"><a href="#3-1安装Nginx" class="headerlink" title="3.1安装Nginx"></a>3.1安装Nginx</h4><pre><code>yum install -y nginx    //安装Nginx
+systemctl start nginx  //启动Nginx
+systemctl enable nginx //开机启动Nginx</code></pre><h4 id="3-2配置Nginx"><a href="#3-2配置Nginx" class="headerlink" title="3.2配置Nginx"></a>3.2配置Nginx</h4><p>针对不同版本不同方式安装的Nginx配置文件位置可能不一样，我们可以用<code>nginx -t</code>查看配置文件位置，也可以用检查语法错误,我的配置文件在<code>/etc/nginx/nginx.conf</code>下</p>
+<p><code>vim /etc/nginx/nginx.conf</code>命令进行编辑</p>
+<pre><code>server { 
+           listen               80 default_server; 
+           listen               [ : : ]:80  default_server; 
+           server_name    www.yangzhiwen.work;        #修改成你的域名 
+           root                /MyBlog/public/;              #修改成网站目录下的public文件夹 
+
+          # Load  configuration  files  for  the  default  server  block. 
+           include /etc/nginx/default.d/*.conf; 
+
+           location / { 
+           } 
+
+           error_page  404  /404.html; 
+                 location = /40x.html { 
+           }  
+
+           error_page 500  502  503  504  /50x.html;
+                 location  =  /50x.html { 
+           } 
+       }
+</code></pre><p>然后<code>systemctl restart nginx</code>重启 服务</p>
+<h3 id="4-安装Node-js"><a href="#4-安装Node-js" class="headerlink" title="4.安装Node.js"></a>4.安装Node.js</h3><h4 id="4-1下载Node-js"><a href="#4-1下载Node-js" class="headerlink" title="4.1下载Node.js"></a>4.1下载Node.js</h4><p><a href="https://nodejs.org/dist/" target="_blank" rel="noopener">下载Ngde.js链接</a></p>
+<p>这是Node.js下载目录自行寻找最新版本</p>
+<pre><code>wget https://nodejs.org/dist/v12.4.0/node-v12.4.0-linux-x64.tar.xz</code></pre><h4 id="4-2解压Node-js压缩包"><a href="#4-2解压Node-js压缩包" class="headerlink" title="4.2解压Node.js压缩包"></a>4.2解压Node.js压缩包</h4><pre><code>xz -d node-v12.4.0-linux-x64.tar.xz
+tar -xvf node-v12.4.0-linux-x64.tar.xz</code></pre><p>移动到<code>/usr/local/node</code>目录下</p>
+<pre><code>mv node-v12.4.0-linux-x64 /usr/local/node</code></pre><h4 id="4-3配置环境变量"><a href="#4-3配置环境变量" class="headerlink" title="4.3配置环境变量"></a>4.3配置环境变量</h4><pre><code>vim /etc/profile
+#编辑这个文件
+export PATH=$PATH:/usr/local/node/bin
+#添加内容，指定Node目录
+source /etc/profile
+#刷新一下环境</code></pre><p>输入<code>node -v</code>测试Node.js是否安装成功，输出版本即完成安装</p>
+<h3 id="5-安装Hexo框架"><a href="#5-安装Hexo框架" class="headerlink" title="5.安装Hexo框架"></a>5.安装Hexo框架</h3><h4 id="5-1创建博客目录"><a href="#5-1创建博客目录" class="headerlink" title="5.1创建博客目录"></a>5.1创建博客目录</h4><p>这里的目录应该是刚刚Nginx里配置的目录，不然Nginx方式访问不上</p>
+<pre><code>mkdir /MyBlog
+#创建目录
+cd /MyBlog
+#进入目录</code></pre><h4 id="5-2安装Hexo"><a href="#5-2安装Hexo" class="headerlink" title="5.2安装Hexo"></a>5.2安装Hexo</h4><pre><code>npm install -g hexo-cli</code></pre><h4 id="5-4修改配置"><a href="#5-4修改配置" class="headerlink" title="5.4修改配置"></a>5.4修改配置</h4><pre><code>vim _config.yml</code></pre><pre><code># Hexo Configuration 
+## Docs: https://hexo.io/docs/configuration.html 
+## Source: https://github.com/hexojs/hexo/ 
+
+# Site 站点信息设置 
+title:   杨梅君博客            #站点名字 
+subtitle:   #副标题 
+description:  #站描述 
+author: 杨梅君 #作者 
+language: zh-CN #语言 
+timezone:  
+
+#URL 链接设置 ## If your site is put in a subdirectory, set url as &#39;http://yoursite.com/child&#39; and root as &#39;/child/&#39; 
+url: http://www.yangzhiwen.work #设置成你的域名 
+root: / 
+permalink: :year/:month/:day/:title/ 
+permalink_defaults: -----------------------------------------------------------------略 
+deploy: 
+    type: git
+    repo: git@github.com:mocorochio/micorochio.github.io.git #git仓库地址 
+    branch: master 
+    message: &#39;站点更新:{{now("YYYY-MM-DD HH/mm/ss")}}&#39;
+</code></pre><h3 id="6-部署到GitHub上"><a href="#6-部署到GitHub上" class="headerlink" title="6.部署到GitHub上"></a>6.部署到GitHub上</h3><h4 id="6-1设置本机Git全局配置"><a href="#6-1设置本机Git全局配置" class="headerlink" title="6.1设置本机Git全局配置"></a>6.1设置本机Git全局配置</h4><pre><code>git config --global user.email 2example@qq.com  //这里的eamil改成自己GitHub上的邮件地址
+git config --global user.name Catl07   //这里的name改成你Github的用户名</code></pre><h4 id="6-2生成ssh密码"><a href="#6-2生成ssh密码" class="headerlink" title="6.2生成ssh密码"></a>6.2生成ssh密码</h4><p>生成ssh密钥的作用是将本地文件部署到Github</p>
+<pre><code>cd   //进到根目录
+ssh-keygen -t rsa -C example@qq.com    //不带-C和自己用户名邮箱Github不认可
+less .ssh/id_rsa.pub     /查看密钥</code></pre><h4 id="6-3创建博客工程"><a href="#6-3创建博客工程" class="headerlink" title="6.3创建博客工程"></a>6.3创建博客工程</h4><p>敲黑板！！！注意看！！！</p>
+<h5 id="6-3-1新建一个储存库"><a href="#6-3-1新建一个储存库" class="headerlink" title="6.3.1新建一个储存库"></a>6.3.1新建一个储存库</h5><p>登录到你的GitHub然后点击这个位置，进去新建一个储存库</p>
+<p><img src="https://catl07-1259398274.cos.ap-chengdu.myqcloud.com/Nginx%2BGitHub-bushu-Hexo/GitHub%E6%AD%A5%E9%AA%A41.PNG" alt></p>
+<p>重点来了！ 名字设置成<code>你的用户名.github.io</code> 不然网站可能访问不上</p>
+<p><img src="https://catl07-1259398274.cos.ap-chengdu.myqcloud.com/Nginx%2BGitHub-bushu-Hexo/GitHub%E6%AD%A5%E9%AA%A42.PNG" alt></p>
+<p>因为我的用户名是Catl04所以库名字叫Catl04.github.io</p>
+<h5 id="6-3-2在GitHub上导入ssh密钥"><a href="#6-3-2在GitHub上导入ssh密钥" class="headerlink" title="6.3.2在GitHub上导入ssh密钥"></a>6.3.2在GitHub上导入ssh密钥</h5><p>执行<code>less ~/.ssh/id_rsa.pub</code>将内容全部复制</p>
+<p><img src="https://catl07-1259398274.cos.ap-chengdu.myqcloud.com/Nginx%2BGitHub-bushu-Hexo/ssh%E7%A4%BA%E4%BE%8B.png" alt></p>
+<p>进入秘钥设置面板:<a href="https://link.jianshu.com/?t=https://github.com/settings/ssh" target="_blank" rel="noopener">https://github.com/settings/ssh</a> 将复制内容全部复制到GitHub里面</p>
+<h5 id="6-3-3配置Hexo与GitHub仓库同步"><a href="#6-3-3配置Hexo与GitHub仓库同步" class="headerlink" title="6.3.3配置Hexo与GitHub仓库同步"></a>6.3.3配置Hexo与GitHub仓库同步</h5><pre><code>#这里不能弄错，不然部署不上去
+deploy:
+  type: git
+  repo: https://github.com/Catl04/Catl04.github.io.git     #git仓库地址
+  branch: master           
+  message: &#39;站点更新:{{now("YYYY-MM-DD HH/mm/ss")}}&#39;</code></pre><p>下面是获取仓库地址</p>
+<p><img src="https://catl07-1259398274.cos.ap-chengdu.myqcloud.com/Nginx%2BGitHub-bushu-Hexo/%E4%BB%93%E5%BA%93%E5%9C%B0%E5%9D%80%E8%8E%B7%E5%8F%96.PNG" alt></p>
+<h3 id="修改主题"><a href="#修改主题" class="headerlink" title=".修改主题"></a>.修改主题</h3><h4 id="7-1主题下载"><a href="#7-1主题下载" class="headerlink" title="7.1主题下载"></a>7.1主题下载</h4><p><a href="https://hexo.io/themes/" target="_blank" rel="noopener">主题链接</a> 这是其他博主分享的主题，找一个自己喜欢的下载</p>
+<h4 id="7-2使用主题"><a href="#7-2使用主题" class="headerlink" title="7.2使用主题"></a>7.2使用主题</h4><p>通过工具上传主题到博客目录下一个名叫<code>theme</code>文件夹内然后编辑主目录下的_config.yml</p>
+<pre><code>#找到theme值  修改成你下载主题解压出来的文件夹名称</code></pre><h3 id="8-部署与访问测试"><a href="#8-部署与访问测试" class="headerlink" title="8.部署与访问测试"></a>8.部署与访问测试</h3><p><strong>部署:</strong></p>
+<p>Ps:在本地博客文件目录</p>
+<pre><code>hexo generate 
+#编译Hexo
+hexo d
+#将本地库更新至GitHub仓库</code></pre><p>执行<code>hexo d</code>后报如下错</p>
+<pre><code>ERROR Deployer not found: git</code></pre><p>这是没有部署插件安装一下就好了</p>
+<pre><code>npm install --save hexo-deployer-git</code></pre><p>再次部署就发现成功了</p>
+<p><strong>访问</strong>:</p>
+<p><a href="https://Catl04.github.io">https://Catl04.github.io</a></p>
+<p>将<code>catl04</code>改成你的用户名就能访问了。</p>
+]]></content>
       <categories>
-          
-          <category> Hexo博客记录 </category>
-          
+        <category>Hexo博客记录</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>你好</title>
-      <link href="//posts/611/"/>
-      <url>//posts/611/</url>
-      
-        <content type="html"><![CDATA[<p>欢迎来到 <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! 这是你的第一篇文章。 查看 <a href="https://hexo.io/docs/" target="_blank" rel="noopener">文档</a> 以获得更多信息。 如果您在使用Hexo时遇到任何问题, 可以在 <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">故障排除中</a> 找到答案，或者您可以在<a href="https://github.com/Catl04/Catl04.github.io/" target="_blank" rel="noopener">GitHub</a>上询问我。</p><h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="创建一个新帖子"><a href="#创建一个新帖子" class="headerlink" title="创建一个新帖子"></a>创建一个新帖子</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>更多信息: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>更多信息: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>更多信息: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>更多信息: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 介绍 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-  
-  
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>你好</title>
+    <url>//posts/611/</url>
+    <content><![CDATA[<p>欢迎来到 <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! 这是你的第一篇文章。 查看 <a href="https://hexo.io/docs/" target="_blank" rel="noopener">文档</a> 以获得更多信息。 如果您在使用Hexo时遇到任何问题, 可以在 <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">故障排除中</a> 找到答案，或者您可以在<a href="https://github.com/Catl04/Catl04.github.io/" target="_blank" rel="noopener">GitHub</a>上询问我。</p>
+<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="创建一个新帖子"><a href="#创建一个新帖子" class="headerlink" title="创建一个新帖子"></a>创建一个新帖子</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre>
+<p>更多信息: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre>
+<p>更多信息: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre>
+<p>更多信息: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre>
+<p>更多信息: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+      <tags>
+        <tag>介绍</tag>
+      </tags>
+  </entry>
 </search>
