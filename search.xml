@@ -1,6 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Cisco子网划分</title>
+    <url>//posts/385/</url>
+    <content><![CDATA[<h2 id="划分子网案例"><a href="#划分子网案例" class="headerlink" title="划分子网案例   "></a><center><strong>划分子网案例</strong>   </center></h2><p>本文章和大家讨论，如何进行IP地址的子网规划，有三个案例供大家参考，两个基础教程案例和一个自行规划案例！<font color="red">  ٩(ˊωˋ*)و</font></p>
+<h4 id="案例一："><a href="#案例一：" class="headerlink" title="  案例一： "></a><center>  <strong>案例一：</strong> </center></h4><p>那我们用（10.87.0.0/16）这个IP来划分子网，为<strong>38</strong>个机房 规划，最大的机房有94台机器，请给出解决方案。</p>
+<p>第一步：我们<font color="red"> <strong>只看</strong></font>为几个机房规划，38个机房，其他的不需要看，那我们就看<font color="red"> <strong>2的几次方是比38大或等于38的</strong> </font>，2的5次方=32，6次方是64，64比38大那我们就用2的6次方。</p>
+<p>第二步：<font color="red"> <strong>接着算公式，很简单注意看！！！</strong></font></p>
+<p>10.87.0.0/16</p>
+<p>10.87.<font color="red"> <strong>000000</strong></font>00.00000000/22（因为是6次方嘛，所以划到第6个零，标红了，为什么是/22，因为上面是/16，16+6就等于22啦，所以第一个机房的网络就是10.87.0.0/22啦）</p>
+<p>10.87.<font color="red"> <strong>000001</strong></font>00.00000000（从红色开始算就等于10.87.4.0/22，所以第二个子网就是10.87.4.0/22啦）</p>
+<p>第三步：划分38个子网出来，我们知道第一个子网和第二个子网就行了，<font color="red"> <strong>其他子网不需要算了</strong></font>，那其他子网怎么来呢，注意看！！</p>
+<p>子网1：0.0/22  子网2：4.0/22  那子网3就是加4，然后一直加四个嘛</p>
+<p>比如：4+4等于8，子网3就是8.0/22</p>
+<p>接着：8+4等于12，子网4就是12.0/22</p>
+<p>接着：12+4等于16，子网5就是16.0/22</p>
+<p>………..然后划分出38个子网就好啦！！</p>
+<p><font color="red"> <strong>这样就完成了，子网划分啦！！</strong></font></p>
+<p><font color="red"> <strong>第一个IP怎么来，最后一个IP怎么来，广播IP怎么来</strong></font></p>
+<p><font color="red"> <strong>注意看！注意看！！注意看！！！</strong></font></p>
+<p>第一个IP就是子网点1，最后一个IP就是子网+1点254，广播就是255。</p>
+<p>比如：子网1是0.0，那第一个IP就是0.1，最后一个就是1.254，广播就是1.255</p>
+<p>子网2是4.0，第一个IP就是4.1，最后一个IP就是5.254，广播就是5.255</p>
+<p>子网3是8.0,第一个IP就是8.1，最后一个IP就是9.254，广播就是9.255</p>
+<p>子网4是12.0，第一个IP就是12.1，最后一个IP就是13.254，广播就是13.255</p>
+<p>其他都是接着这个一样的！！</p>
+<h4 id="案例二："><a href="#案例二：" class="headerlink" title=" 案例二："></a><center> <strong>案例二：</strong></center></h4><p>那我们再用（10.87.0.0/16）这个IP来划分子网，为77个机房规划，最大的机房有333台机器。</p>
+<p>第一步：2的7次方=128，比77大。</p>
+<p>第二部：10.87.0.0/16</p>
+<p>10.87.<font color="red"> <strong>0000000</strong></font>0.00000000/23（7次方，划到第7个零，16+7等于23，所以第一个机房的网络就是10.87.0.0/23啦）</p>
+<p>10.87.<font color="red"> <strong>0000001</strong></font>0.00000000/23(第二个网络就是10.87.2.0/23)</p>
+<p>第三步：</p>
+<p>2+2等于4</p>
+<p>子网3:10.87.4.0/23 (第一IP4.1，最后IP5.254，广播5.255)</p>
+<p>4+2等于6</p>
+<p>子网4：10.87.6.0/23 (第一IP6.1，最后IP7.254，广播7.255)</p>
+<p>6+2等于8</p>
+<p>子网5：10.87.8.0/23 (第一IP8.1，最后IP9.254，广播9.255)</p>
+<p>然后划分出77个子网就可以啦！！</p>
+<p><font color="red"> <strong>注意看第一个案例！！</strong></font>                                                       </p>
+<h4 id="案例三："><a href="#案例三：" class="headerlink" title=" 案例三："></a><center> <strong>案例三：</strong></center></h4><p>用（10.88.0.0/16）这个IP来划分子网，为10个机房规划，最大的机房有50台机器。</p>
+<p>大家，用这个IP试试自己划分！</p>
+<p><strong>最后关于子网划分就到这里啦，一定要仔细慢慢的看，不要大概的看一下！（只要仔细看，相信一定可以学会的！）</strong></p>
+<p><font color="red"> <strong>很简便的教程，一定要慢慢仔细看！！！</strong></font></p>
+]]></content>
+      <categories>
+        <category>Cisco学习记录</category>
+      </categories>
+      <tags>
+        <tag>Cisco</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Windows学习日志</title>
     <url>//posts/1219/</url>
     <content><![CDATA[<h2 id="Windows-Server-2003安装IIS服务并配置WEB站点"><a href="#Windows-Server-2003安装IIS服务并配置WEB站点" class="headerlink" title="Windows Server 2003安装IIS服务并配置WEB站点"></a>Windows Server 2003安装IIS服务并配置WEB站点</h2><h4 id="一、安装IIS服务"><a href="#一、安装IIS服务" class="headerlink" title="一、安装IIS服务"></a><strong>一、安装IIS服务</strong></h4><p>简介：IIS（Internet Information Server，互联网信息服务）是一种Web（网页）服务组件，其中包<br>括Web服务器、FTP服务器、NNTP服务器和SMTP服务器，分别用于网页浏览、文件传输、新闻服务和邮&gt;<br>件发送等方面，它使得在网络（包括互联网和局域网）上发布信息成了一件很容易的事。</p>
